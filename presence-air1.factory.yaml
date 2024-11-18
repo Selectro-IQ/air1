@@ -7,7 +7,7 @@ packages:
 
 esphome:
   project:
-    name: Presence Air 1
+    name: presence-air1
     version: 2024.10.0
 
 dashboard_import:

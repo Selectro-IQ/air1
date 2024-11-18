@@ -1,5 +1,4 @@
-packages:
-  presence-air1: !include presence-air1.yaml
+
 
 esphome:
   project:

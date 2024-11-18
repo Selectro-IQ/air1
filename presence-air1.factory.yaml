@@ -1,4 +1,9 @@
-
+packages:
+  remote_package_files:
+    url: https://github.com/Mikescotland/LD2412
+    files: [presence-air1.yaml] 
+    ref: main  
+    refresh: 1s  
 
 esphome:
   project:

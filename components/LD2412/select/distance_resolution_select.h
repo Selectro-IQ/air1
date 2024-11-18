@@ -6,9 +6,9 @@
 namespace esphome {
 namespace LD2412 {
 
-class BaudRateSelect : public select::Select, public Parented<LD2412Component> {
+class DistanceResolutionSelect : public select::Select, public Parented<LD2412Component> {
  public:
-  BaudRateSelect() = default;
+  DistanceResolutionSelect() = default;
 
  protected:
   void control(const std::string &value) override;

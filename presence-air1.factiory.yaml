@@ -1,0 +1,30 @@
+packages:
+  presence-air1: !include presence-air1.yaml
+
+esphome:
+  project:
+    name: Presence Air 1
+    version: 2024.10.0
+
+dashboard_import:
+  package_import_url: github://mikescotland/presence-air1.yaml@main
+  import_full_config: true
+
+improv_serial:
+
+esp32_improv:
+  authorizer: none
+
+ota:
+  - platform: http_request
+    id: ota_http_request
+
+update:
+  - platform: http_request
+    id: update_http_request
+    name: Firmware
+    source: https://mpreno.uk/PresenceAir1-manifest.json
+    update_interval: 6h
+
+http_request:
+  verify_ssl: true

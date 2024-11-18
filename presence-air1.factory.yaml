@@ -8,7 +8,7 @@ packages:
 esphome:
   project:
     name: PolComp.presence-air1
-    version: 2024.10.0
+    version: 1.0
 
 dashboard_import:
   package_import_url: github://mikescotland/presence-air1.yaml@main

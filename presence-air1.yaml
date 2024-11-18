@@ -31,7 +31,7 @@ ota:
 external_components:
   - source:
       type: git
-      url: https://github.com/mikescotland/LD2412
+      url: https://github.com/Mikescotland/LD2412
       ref: main
     components: [LD2412]
 

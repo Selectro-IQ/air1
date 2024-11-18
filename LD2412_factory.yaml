@@ -7,7 +7,7 @@ external_components:
 
 LD2412:
   id: ld2412
-  throttle: 3s
+  throttle: 0.1s
 
 binary_sensor:
   - platform: LD2412
@@ -106,11 +106,11 @@ sensor:
 number:
   - platform: LD2412
     timeout:
-      name: "presence holding"
+      name: "Presence Timeout"
     min_distance_gate:
-      name: "min distance gate"
+      name: "Min distance gate"
     max_distance_gate:
-      name: "max distance gate"
+      name: "Max distance gate"
     g0:
       move_threshold:
         name: g00 move threshold
@@ -189,7 +189,7 @@ select:
     distance_resolution:
       name: 'Distance resolution'
     baud_rate:
-      name: "baud rate"
+      name: "Baud Rate"
       on_value:
         - delay: 3s
         - lambda: |-
@@ -205,16 +205,16 @@ select:
 button:
   - platform: LD2412
     factory_reset:
-      name: "factory reset"
+      name: "LD2412 Factory Reset"
     restart:
-      name: "restart"
+      name: "Restart"
     query_params:
       name: query params
 
 text_sensor:
   - platform: LD2412
     version:
-      name: "firmware version"
+      name: "LD2412 Firmware Version"
     mac_address:
       name: "mac address"
 switch:

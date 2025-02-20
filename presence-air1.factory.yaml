@@ -27,7 +27,7 @@ update:
   - platform: http_request
     id: update_http_request
     name: Firmware
-    source: https://mpreno.uk/PresenceAir1-manifest.json
+    source: https://selectro.co.uk/pub/media/firmware/presence-mini.json
     update_interval: 6h
 
 http_request:
